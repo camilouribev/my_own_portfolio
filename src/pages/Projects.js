@@ -1,9 +1,11 @@
 import React from 'react';
 
+import ProjectsSection from '../components/ProjectsSection';
+
 export default function Projects() {
   return (
     <div>
-      <h1>Projects</h1>
+      <ProjectsSection />
     </div>
   );
 }
