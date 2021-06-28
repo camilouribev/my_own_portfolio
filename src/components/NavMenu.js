@@ -10,7 +10,8 @@ const NavMenuStyles = styled.div`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--dark-bg);
+  background: var(--semiwhite);
+
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,7 +22,7 @@ const NavMenuStyles = styled.div`
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: var(--deep-dark);
+        background-color: #e8e8e8;
       }
     }
     a {
@@ -29,11 +30,11 @@ const NavMenuStyles = styled.div`
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: var(--gray-1);
+      color: var(--navy);
       outline: none;
     }
     .active {
-      color: var(--white);
+      color: var(--red);
     }
   }
   .mobile-menu-icon {
@@ -44,6 +45,7 @@ const NavMenuStyles = styled.div`
     cursor: pointer;
     display: none;
     outline: none;
+
     * {
       pointer-events: none;
     }
@@ -58,11 +60,17 @@ const NavMenuStyles = styled.div`
     }
     .mobile-menu-icon {
       display: block;
+
+      filter: brightness(0) saturate(100%) invert(15%) sepia(28%)
+        saturate(5117%) hue-rotate(250deg) brightness(90%) contrast(107%);
+    }
+
+    .closeNavIcon {
     }
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--deep-dark);
+      background-color: var(--semiwhite);
       padding: 2rem;
       width: 90%;
       max-width: 300px;
@@ -75,6 +83,8 @@ const NavMenuStyles = styled.div`
         width: 3rem;
         margin: 0 0 0 auto;
         cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(15%) sepia(28%)
+          saturate(5117%) hue-rotate(250deg) brightness(90%) contrast(107%);
         * {
           pointer-events: none;
         }

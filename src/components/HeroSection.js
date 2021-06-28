@@ -16,19 +16,21 @@ const HeroStyles = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: var(--semiwhite);
   }
   .hero__heading {
     font-size: 2rem;
-    margin-bottom: -4rem;
+    margin-bottom: 0 rem;
     position: relative;
     span {
       display: inline-block;
       width: 100%;
+      color: var(--navy);
     }
     .hero__name {
       font-family: 'Montserrat SemiBold';
       font-size: 7rem;
-      color: var(--white);
+      color: var(--navy);
     }
   }
   .hero__img {
@@ -39,7 +41,7 @@ const HeroStyles = styled.div`
     border: 2px solid var(--gray-1);
   }
   .hero__info {
-    margin-top: -18rem;
+    margin-top: -15rem;
   }
   .hero__social,
   .hero__scrollDown {
@@ -61,20 +63,26 @@ const HeroStyles = styled.div`
     width: 50px;
     p {
       font-size: 1.6rem;
-      transform: translateY(-70px) rotate(90deg);
+      transform: translateY(-90px) rotate(90deg);
       letter-spacing: 0.7rem;
       text-transform: uppercase;
+      color: var(--red);
     }
     img {
       max-height: 45px;
       width: 16px;
       margin: 0 auto;
       object-fit: contain;
+      background-color: transparent;
+      filter: brightness(0) saturate(100%) invert(15%) sepia(76%)
+        saturate(2320%) hue-rotate(333deg) brightness(97%) contrast(90%);
     }
   }
   .hero__scrollDown {
     img {
       max-height: 70px;
+      filter: brightness(0) saturate(100%) invert(15%) sepia(76%)
+        saturate(2320%) hue-rotate(333deg) brightness(97%) contrast(90%);
     }
   }
   .hero__social__text {
@@ -87,6 +95,7 @@ const HeroStyles = styled.div`
           transform: rotate(-90deg);
           letter-spacing: 5px;
           margin-bottom: 2rem;
+          color: var(--red);
         }
       }
     }
@@ -97,7 +106,7 @@ const HeroStyles = styled.div`
     }
     .hero__heading {
       font-size: 1.4rem;
-      margin-bottom: -3rem;
+      margin-bottom: 0rem;
       .hero__name {
         font-size: 4.5rem;
       }
@@ -110,7 +119,7 @@ const HeroStyles = styled.div`
     }
     .hero__social {
       left: 0px;
-      bottom: -15%;
+      bottom: -5%;
       width: 20px;
       .hero__social__indicator {
         width: 20px;
@@ -136,6 +145,7 @@ const HeroStyles = styled.div`
       right: 0;
       width: 20px;
       gap: 1rem;
+      bottom: 20%;
       p {
         font-size: 1.3rem;
       }
@@ -149,23 +159,19 @@ export default function HeroSection() {
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
-            <span>Hello, This is</span>
-            <span className="hero__name">Ayan Khan</span>
+            <span className="hero__name">Camilo Uribe</span>
+            <span>Web Developer</span>
           </h1>
           <div className="hero__img">
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
-            <PText>
-              I am working as a freelance web designer and developer for 4
-              years. I love to design and make new web experiences for the
-              people.
-            </PText>
-            <Button btnText="see my works" btnLink="/projects" />
+            <PText>Placeholder text</PText>
+            <Button btnText="see my projects" btnLink="/projects" />
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">
-              <p>Follow</p>
+              <p>contact</p>
               <img src={SocialMediaArrow} alt="icon" />
             </div>
             <div className="hero__social__text">
@@ -176,7 +182,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    FB
+                    LI
                   </a>
                 </li>
                 <li>
@@ -186,24 +192,6 @@ export default function HeroSection() {
                     rel="noreferrer"
                   >
                     TW
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://isntagram.com/web_cifar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    IG
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://webcifar.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    LI
                   </a>
                 </li>
               </ul>

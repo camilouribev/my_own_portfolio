@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/about-sec-img.png';
+import AboutImg from '../assets/images/6-gris.png';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
+  background-color: var(--semiwhite);
   .container {
     display: flex;
     align-items: center;
@@ -16,6 +17,10 @@ const AboutSectionStyles = styled.div`
   .aboutSection__left,
   .aboutSection__right {
     flex: 1;
+  }
+  .aboutImg {
+    width: 70%;
+    height: 70%;
   }
   .section-title {
     text-align: left;
@@ -75,14 +80,11 @@ export default function AboutSection() {
     <AboutSectionStyles>
       <div className="container">
         <div className="aboutSection__left">
-          <SectionTitle
-            subheading="Let me introduce myself"
-            heading="About Me"
-          />
+          <SectionTitle subheading="Who am I:" heading="About Me" />
           <PText>
-            I am a freelance website designer and developer from Chittagong,
-            Bangladesh. I create professional websites. I love art and always
-            try to show unique views to the audience through my design.
+            I am junior web developer from Medellín, Colombia. I have a passion
+            for logic and inclination for backend development, focused on
+            writing code for real life solutions,
           </PText>
           <div className="aboutSection__buttons">
             <Button btnText="Works" btnLink="/projects" />

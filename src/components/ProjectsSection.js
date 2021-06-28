@@ -12,6 +12,7 @@ SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
   padding: 10rem 0;
+  background-color: var(--semiwhite);
   .projects__allItems {
     display: flex;
     gap: 3rem;
@@ -84,7 +85,7 @@ export default function ProjectsSection() {
               },
               // when window width is >= 1200px
               1200: {
-                slidesPerView: 3,
+                slidesPerView: 2,
               },
             }}
           >

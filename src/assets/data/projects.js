@@ -1,29 +1,21 @@
 import { v4 as uuidv4 } from 'uuid';
-import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
-import CoinTrackerImg from '../images/cointracker.jpg';
+import Isomer from '../images/isomer.png';
+import Pole from '../images/pole.jpg';
 
 const projects = [
   {
     id: uuidv4(),
-    name: 'U Tracker',
+    name: 'Isomer Search',
     desc:
-      'An application to track your all data from one place. I developed the website and the mobile app',
-    img: UTrackerImg,
+      'Chemical isomer search with 3D representation of compounds and a description taken from PubChem sources. Made with R',
+    img: Isomer,
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
+    name: 'Rise Up Ecommerce',
     desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
-  },
-  {
-    id: uuidv4(),
-    name: 'Coin Tracker',
-    desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
+      'Pole dance academy landing, with a complete ecommerce for elements to practice aerial disciplines. Made with Django, React and Redux',
+    img: Pole,
   },
 ];
 
