@@ -17,7 +17,7 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__info {
     margin-top: 1rem;
-    background-color: #e8e8e8;
+    background-color: var(--offwhite);
     padding: 1rem;
     border-radius: 12px;
   }

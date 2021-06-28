@@ -5,7 +5,6 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color:red,
   }
   :root{
     --dark-bg: #262626;
@@ -19,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
     --navy: #3C1874;
     --darkblue: #283747;
     --semiwhite: #F3F3F3;
+    --offwhite: #e8e8e8;
   }
   html{
     font-size: 10px;

@@ -22,7 +22,7 @@ const NavMenuStyles = styled.div`
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: #e8e8e8;
+        background-color: var(--offwhite);
       }
     }
     a {

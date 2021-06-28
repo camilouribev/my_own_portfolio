@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import Isomer from '../images/isomer.png';
-import Pole from '../images/pole.jpg';
+import Pole from '../images/pole-small.jpg';
 
 const projects = [
   {
