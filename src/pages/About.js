@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/Button';
-import AboutImg from '../assets/images/about-page-img.png';
-import AboutInfoItem from '../components/AboutInfoItem';
+import AboutImg from '../assets/images/6-small.jpg';
 import ContactBanner from '../components/ContactBanner';
+import IconGrid from '../components/IconGrid';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -25,7 +25,7 @@ const AboutPageStyles = styled.div`
     font-size: 2.2rem;
     margin-bottom: 2rem;
     span {
-      background-color: var(--deep-dark);
+      background-color: var(--offwhite);
       padding: 0.5rem;
       border-radius: 8px;
     }
@@ -81,26 +81,21 @@ export default function About() {
           <div className="top-section">
             <div className="left">
               <p className="about__subheading">
-                Hi, I am <span>Ayan Khan</span>
+                Hello, I am <span>Camilo Uribe </span>
               </p>
-              <h2 className="about__heading">A freelance Web developer</h2>
+              <h2 className="about__heading">Junior Web developer</h2>
               <div className="about__info">
                 <PText>
-                  I am from chittagong, Bangladesh. A place of beauty and
-                  nature. Since my childhood, i love art and design. I always
-                  try to design stuff with my unique point of view. I also love
-                  to create things that can be usefull to others.
+                  I am from Medellín, Colombia. With a background in mechanical
+                  and chemical engineering, I started writing code for the
+                  modelling of thermochemical processes , but my curiosity made
+                  me realize the endless possibilities of programming, and ended
+                  up with a passion for all things web related.
                   <br /> <br />
-                  I started coding since I was in high school. Coding is also an
-                  art for me. I love it and now I have the opportunity to design
-                  along with the coding. I find it really interesting and I
-                  enjoyed the process a lot.
+                  Now, I'm a self-taught developer, with a keen interest in
+                  software and improving my coding skills day by day. I would
+                  love to be part of a good team and create together!
                   <br />
-                  <br />
-                  My vision is to make the world a better place. Now almost
-                  everything is becoming better than ever. It is time for us to
-                  create more good stuff that helps the world to become a better
-                  place.
                 </PText>
               </div>
               <Button btnText="Download CV" btnLink="#" />
@@ -112,19 +107,7 @@ export default function About() {
           <div className="about__info__items">
             <div className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
-
-              <AboutInfoItem
-                title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT']}
-              />
-              <AboutInfoItem
-                title="BackEnd"
-                items={['Node', 'Express', 'PHP']}
-              />
-              <AboutInfoItem
-                title="Design"
-                items={['Photoshop', 'After Effects', 'Figma']}
-              />
+              <IconGrid />
             </div>
           </div>
         </div>

@@ -23,10 +23,11 @@ const Typography = createGlobalStyle`
     font-family: 'RobotoMono Regular';
     color: var(--navy);
   }
-  *{
+  *{color: inherit;}
+  /* *{
     font-family: 'RobotoMono Regular';
     color: var(--navy);
-  }
+  } */
   h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat SemiBold'
   }

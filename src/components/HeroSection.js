@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import HeroImg from '../assets/images/hero-small.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 import PText from './PText';
+
+import { faLinkedin } from '../../node_modules/@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '../../node_modules/@fortawesome/free-solid-svg-icons';
 
 const HeroStyles = styled.div`
   .hero {
@@ -17,6 +21,7 @@ const HeroStyles = styled.div`
     justify-content: center;
     position: relative;
     background-color: var(--semiwhite);
+    border: none;
   }
   .hero__heading {
     font-size: 2rem;
@@ -92,7 +97,7 @@ const HeroStyles = styled.div`
         a {
           display: inline-block;
           font-size: 1.6rem;
-          transform: rotate(-90deg);
+          transform: rotate(90deg);
           letter-spacing: 5px;
           margin-bottom: 2rem;
           color: var(--red);
@@ -178,20 +183,28 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="http://facebook.com/webcifar"
+                    href="mailto: camiloxj@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    LI
+                    <FontAwesomeIcon
+                      icon={faEnvelope}
+                      className="upload-icon"
+                      size="lg"
+                    />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://twitter.com/webcifar"
+                    href="https://www.linkedin.com/in/camilo-uribe-1285581b1/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    TW
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      className="upload-icon"
+                      size="lg"
+                    />
                   </a>
                 </li>
               </ul>

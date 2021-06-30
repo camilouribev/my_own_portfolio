@@ -4,24 +4,35 @@ import styled from 'styled-components';
 import PText from './PText';
 
 const ItemStyles = styled.div`
-  padding: 2rem;
-  background-color: var(--deep-dark);
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  border-radius: 8px;
+  padding: 0rem;
+  background-color: var(--semiwhite);
+  display: grid;
+  gap: 0rem;
   margin-bottom: 2rem;
   .icon {
-    color: var(--white);
-    background-color: var(--gray-2);
-    padding: 1.3rem;
+    margin: 0 auto;
+    color: var(--navy);
+    background-color: var(--semiwhite);
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 50%;
   }
   svg {
-    width: 3.5rem;
+    width: 7rem;
+    align-items: center;
+  }
+  .info {
+    padding-top: 3rem;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .info {
+      display: none;
+    }
+    .svg {
+      width: 5rem;
+      margin-top: 5rem;
+    }
   }
 `;
 
@@ -30,7 +41,7 @@ export default function ContactInfoItem({
   text = 'I need text ',
 }) {
   return (
-    <ItemStyles>
+    <ItemStyles className="item-styles">
       <div className="icon">{icon}</div>
       <div className="info">
         <PText>{text}</PText>

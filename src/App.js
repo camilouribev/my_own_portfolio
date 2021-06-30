@@ -14,20 +14,22 @@ export default function App() {
       <NavMenu />
       <SmoothScrollbar>
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/">
-            <Home />
+          <Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Footer />
           </Route>
         </Switch>
-        <Footer />
       </SmoothScrollbar>
     </Router>
   );

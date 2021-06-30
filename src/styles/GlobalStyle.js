@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border:0px;
   }
   :root{
     --dark-bg: #262626;
@@ -23,6 +24,8 @@ const GlobalStyles = createGlobalStyle`
   html{
     font-size: 10px;
     font-family: 'Roboto Mono';
+   
+
   }
   ul,li{
     list-style: none;
@@ -51,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
     overflow: hidden;
     background-color: var(--semiwhite);
     .scroll-content {
-      background-color: var(--dark-bg);
+      background-color: var(--semiwhite);
     }
     .scrollbar-track.scrollbar-track-y {
       background: var(--semiwhite);

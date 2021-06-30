@@ -19,7 +19,7 @@ const ProjectSectionStyle = styled.div`
     margin-top: 5rem;
   }
   .swiper-container {
-    padding-top: 8rem;
+    padding-top: 1rem;
     max-width: 100%;
   }
   .swiper-button-prev,
@@ -34,6 +34,7 @@ const ProjectSectionStyle = styled.div`
     top: 0;
     transform: translateY(50%);
     color: var(--gray-1);
+    background-color: var(--navy);
     border-radius: 8px;
   }
   .swiper-button-next {
@@ -60,11 +61,12 @@ const ProjectSectionStyle = styled.div`
         width: 100%;
       }
     }
+    .swiper-container {
+    padding-top: 7rem;
   }
 `;
 
 export default function ProjectsSection() {
-  // console.log(projects);
   return (
     <ProjectSectionStyle>
       <div className="container">

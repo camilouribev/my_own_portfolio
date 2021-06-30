@@ -6,13 +6,14 @@ import ProjectImg from '../assets/images/projectImg.png';
 const ProjectItemStyles = styled.div`
   .projectItem__img {
     width: 100%;
-    height: 400px;
+    height: 450px;
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
     border: 2px solid var(--navy);
     img {
       height: 100%;
+      background-size: cover;
     }
   }
   .projectItem__info {

@@ -1,54 +1,51 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdEmail, MdLocalPhone } from 'react-icons/md';
+import { SiGmail, SiLinkedin, SiGithub } from 'react-icons/si';
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from './SectionTitle';
 
 const ContactSectionStyle = styled.div`
-  padding: 16rem;
-  background-color: var(--semiwhite);
-  .contactSection__wrapper {
-    background-color: var(--offwhite);
-
+  padding: 10rem 0;
+  .contactSection__wrapper,
+  .contactSection__wrapper2 {
     display: flex;
-    gap: 5rem;
-    margin-top: 7rem;
-    justify-content: space-between;
+    gap: 0rem;
+    margin-top: 12rem;
     position: relative;
+    div:hover {
+      color: var(--red);
+    }
   }
-  .contactSection__wrapper::after {
-    position: absolute;
-    content: '';
-    width: 2px;
-    height: 50%;
-    background-color: var(--gray-1);
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-  }
+
   .left {
     width: 100%;
-    max-width: 500px;
+    /* max-width: 500px; */
+    padding-left: 0rem;
   }
   .right {
-    max-width: 500px;
     width: 100%;
-    border-radius: 12px;
-    /* padding-left: 3rem; */
+    padding-left: 0rem;
   }
+
   @media only screen and (max-width: 768px) {
+    height: 100vh;
     .contactSection__wrapper {
       flex-direction: column;
     }
-    .contactSection__wrapper::after {
-      display: none;
+    .contactSection__wrapper2 {
+      flex-direction: column;
+      margin-top: 2rem;
     }
+
     .left,
     .right {
       max-width: 100%;
     }
     .right {
-      padding: 4rem 2rem 2rem 2rem;
+      padding-top: 3rem;
+    }
+    .location {
+      display: none;
     }
   }
 `;
@@ -60,15 +57,38 @@ export default function ContactSection() {
         <SectionTitle heading="contact" subheading="get in touch" />
         <div className="contactSection__wrapper">
           <div className="left">
-            <ContactInfoItem icon={<MdLocalPhone />} text="+8801231" />
+            <a
+              href="https://www.linkedin.com/in/camilo-uribe-1285581b1/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ContactInfoItem icon={<SiLinkedin />} text="LinkedIn" />
+            </a>
           </div>
           <div className="right">
-            <ContactInfoItem icon={<MdEmail />} text="webcifar@gmail.com" />
+            <a
+              href="mailto: camiloxj@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ContactInfoItem icon={<SiGmail />} text="Gmail" />
+            </a>
           </div>
         </div>
-      </div>
-      <div className="container">
-        <ContactInfoItem text="Medellín, Colombia" />
+        <div className="contactSection__wrapper2">
+          <div className="left">
+            <a
+              href="https://github.com/camilouribev"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ContactInfoItem icon={<SiGithub />} text="Github" />
+            </a>
+          </div>
+          <div className="right location">
+            <ContactInfoItem text="Medellín, Colombia" />
+          </div>
+        </div>
       </div>
     </ContactSectionStyle>
   );
