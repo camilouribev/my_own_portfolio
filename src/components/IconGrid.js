@@ -8,16 +8,13 @@ import {
   SiRedux,
   SiPython,
   SiDjango,
-  SiPostman,
+  SiPostgresql,
   SiGit,
 } from 'react-icons/si';
 import { GiGears } from 'react-icons/gi';
 import TechInfoItem from './TechInfoItem';
 
 const TechIcons = styled.div`
-  * {
-    color: #a1a1a1;
-  }
   svg {
     width: 7rem;
   }
@@ -33,31 +30,127 @@ const TechIcons = styled.div`
   }
 
   .cell {
-    color: white;
+    color: #a1a1a1;
     font-size: 3rem;
     text-align: center;
     padding: 4rem;
   }
-  .cell-1:hover {
-    color: var(--red);
+
+  .cell-1 .item-styles:hover {
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+    color: #f06529;
+    .info {
+      visibility: visible;
+    }
   }
-  .cell-2 {
+
+  .cell-2 .item-styles:hover {
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+    color: #2965f1;
+    .info {
+      visibility: visible;
+    }
   }
-  .cell-3 {
+
+  .cell-3 .item-styles:hover {
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+    color: #f0db4f;
+    .info {
+      visibility: visible;
+    }
   }
-  .cell-4 {
+  .cell-4 .item-styles:hover {
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+    color: #61dbfb;
+    .info {
+      visibility: visible;
+    }
   }
-  .cell-5 {
+  .cell-5 .item-styles:hover {
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+    color: #764abc;
+    .info {
+      visibility: visible;
+    }
   }
-  .cell-6 {
+
+  .cell-6 .item-styles:hover {
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+    color: #4b8bbe;
+    .info {
+      visibility: visible;
+    }
   }
-  .cell-7 {
+
+  .cell-7 .item-styles:hover {
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+    color: #092e20;
+    .info {
+      visibility: visible;
+    }
   }
-  .cell-8 {
+
+  .cell-8 .item-styles:hover {
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+    color: #0064a5;
+    .info {
+      visibility: visible;
+    }
   }
-  .cell-9 {
+  .cell-9 .item-styles:hover {
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+    color: #f1502f;
+    .info {
+      visibility: visible;
+    }
   }
-  .cell-10 {
+
+  .cell-10 .item-styles:hover {
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+    color: var(--navy);
+    .info {
+      visibility: visible;
+    }
   }
   @media only screen and (max-width: 768px) {
     .container2 {
@@ -68,6 +161,9 @@ const TechIcons = styled.div`
     }
     svg {
       width: 5.5rem;
+    }
+    .info {
+      visibility: visible;
     }
   }
   @media only screen and (max-width: 500px) {
@@ -110,7 +206,7 @@ function IconGrid() {
           <TechInfoItem icon={<SiDjango />} text="Django" />
         </div>
         <div className="cell cell-8">
-          <TechInfoItem icon={<SiPostman />} text="Postman" />
+          <TechInfoItem icon={<SiPostgresql />} text="PostgreSQL" />
         </div>
         <div className="cell cell-9">
           <TechInfoItem icon={<SiGit />} text="Git" />

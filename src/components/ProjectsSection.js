@@ -11,7 +11,9 @@ import projects from '../assets/data/projects';
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
+  height:100vh;
   padding: 10rem 0;
+  margin-bottom:20rem;
   background-color: var(--semiwhite);
   .projects__allItems {
     display: flex;
@@ -51,6 +53,7 @@ const ProjectSectionStyle = styled.div`
     font-size: 2rem;
   }
   @media only screen and (max-width: 768px) {
+    height:130vh;
     .projects__allItems {
       flex-direction: column;
       max-width: 400px;

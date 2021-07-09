@@ -6,11 +6,12 @@ import SectionTitle from './SectionTitle';
 
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
+
   .contactSection__wrapper,
   .contactSection__wrapper2 {
     display: flex;
     gap: 0rem;
-    margin-top: 12rem;
+    margin-top: 20rem;
     position: relative;
     div:hover {
       color: var(--red);

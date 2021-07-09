@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/6-purple.png';
+import AboutImg from '../assets/images/about-small-v.jpg';
 
 const AboutSectionStyles = styled.div`
-  padding: 10rem 0;
+  padding: 15rem 0;
   background-color: var(--semiwhite);
   border: none;
   .container {

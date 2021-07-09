@@ -11,11 +11,11 @@ const ItemStyles = styled.div`
   margin-bottom: 2rem;
   .icon {
     margin: 0 auto;
-    color: var(--navy);
     background-color: var(--semiwhite);
     display: flex;
     justify-content: center;
   }
+
   svg {
     width: 7rem;
     align-items: center;
@@ -23,6 +23,7 @@ const ItemStyles = styled.div`
   .info {
     padding-top: 3rem;
     margin: 0 auto;
+    visibility: hidden;
   }
 
   @media only screen and (max-width: 768px) {
