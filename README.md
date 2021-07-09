@@ -1,5 +1,3 @@
-# React Portfolio website
+# Portafolio desarrollo web
 
-Designed by - [shaif Arfan](http://github.com/shaifarfan) | [web cifar](http://webcifar.com)
-
-![](./ReadMeImages/ReadMeBanner.png)
+Por Camilo Uribe Vargas
