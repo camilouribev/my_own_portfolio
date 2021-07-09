@@ -9,6 +9,7 @@ const projects = [
     desc:
       'Chemical isomer search with 3D representation of compounds and a description taken from PubChem sources. Made with React.',
     img: Isomer,
+    link: 'https://camilouribev.github.io/isomer-search/',
   },
   {
     id: uuidv4(),
@@ -16,6 +17,7 @@ const projects = [
     desc:
       'Pole dance academy website, with a complete ecommerce of aerial acrobatics equipment. Made with Django, React and Redux.',
     img: Pole,
+    link: 'https://riseuppoledance.herokuapp.com/',
   },
 ];
 

@@ -99,6 +99,7 @@ export default function ProjectsSection() {
               return (
                 <SwiperSlide key={project.id}>
                   <ProjectItem
+                    link={project.link}
                     title={project.name}
                     img={project.img}
                     desc={project.desc}
