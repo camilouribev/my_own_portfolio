@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import pdf from '../assets/data/Camilo-Uribe-CV.pdf';
 import PText from '../components/PText';
 import Button from '../components/Button';
 import AboutImg from '../assets/images/6-small.jpg';
@@ -98,7 +99,7 @@ export default function About() {
                   <br />
                 </PText>
               </div>
-              <Button btnText="Download CV" btnLink="#" />
+              <Button btnText="Download CV" btnLink={pdf} target="_blank" />
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />

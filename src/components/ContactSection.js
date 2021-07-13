@@ -11,7 +11,7 @@ const ContactSectionStyle = styled.div`
   .contactSection__wrapper2 {
     display: flex;
     gap: 0rem;
-    margin-top: 20rem;
+    margin-top: 9rem;
     position: relative;
     div:hover {
       color: var(--red);
@@ -59,7 +59,7 @@ export default function ContactSection() {
         <div className="contactSection__wrapper">
           <div className="left">
             <a
-              href="https://www.linkedin.com/in/camilo-uribe-1285581b1/"
+              href="https://www.linkedin.com/in/camilo-uribe-vargas"
               target="_blank"
               rel="noreferrer"
             >

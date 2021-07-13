@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/about-small-v.jpg';
+import AboutImg from '../assets/images/about-crop-purple.png';
 
 const AboutSectionStyles = styled.div`
-  padding: 15rem 0;
+  padding: 14rem 0;
   background-color: var(--semiwhite);
   border: none;
   .container {
@@ -46,6 +46,8 @@ const AboutSectionStyles = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
+    padding: 0rem 0;
+
     .container {
       flex-direction: column;
       text-align: center;
@@ -84,11 +86,11 @@ export default function AboutSection() {
           <SectionTitle subheading="Who am I:" heading="About Me" />
           <PText>
             I am junior web developer from Medellín, Colombia. I have a passion
-            for problem solving through logical thinking, focused on writing
-            code for real life solutions.
+            for problem solving through logical thinking, writing code for real
+            life solutions.
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnText="Works" btnLink="/projects" />
+            <Button btnText="Recent projects" btnLink="/projects" />
             <Button btnText="Read More" btnLink="/about" outline />
           </div>
         </div>

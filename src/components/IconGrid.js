@@ -168,6 +168,7 @@ const TechIcons = styled.div`
   }
   @media only screen and (max-width: 500px) {
     .container2 {
+      margin-bottom: 5rem;
       margin-left: 0px;
       height: 130vh;
       grid-template-columns: 1fr 1fr;

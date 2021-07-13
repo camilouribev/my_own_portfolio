@@ -10,10 +10,10 @@ import PText from './PText';
 
 const FooterStyle = styled.div`
   background-color: var(--offwhite);
-  padding-top: 10rem;
+  padding-top: 5rem;
+
   .container {
     background-color: var(--offwhite);
-
     display: flex;
     gap: 3rem;
   }
@@ -47,9 +47,11 @@ const FooterStyle = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
+    position: relative;
+    margin-top: auto;
     .container {
       flex-direction: column;
-      gap: 0rem;
+      gap: 3rem;
       & > div {
         margin-top: 2rem;
       }
@@ -90,7 +92,7 @@ export default function Footer() {
         </div>
         <div className="footer__col3">
           <a
-            href="https://www.linkedin.com/in/camilo-uribe-1285581b1/"
+            href="https://www.linkedin.com/in/camilo-uribe-vargas"
             target="_blank"
             rel="noreferrer"
           >

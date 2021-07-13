@@ -5,10 +5,11 @@ import Button from './Button';
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
   background-color: var(--semiwhite);
+
   .contactBanner__wrapper {
     background-color: var(--offwhite);
     border-radius: 12px;
-    padding: 5rem 0rem;
+    padding: 10rem 0rem;
     text-align: center;
   }
   .contactBanner__heading {
@@ -16,6 +17,8 @@ const ContactBannerStyles = styled.div`
     margin-bottom: 2rem;
   }
   @media only screen and (max-width: 768px) {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
     .contactBanner__heading {
       font-size: 2.8rem;
     }

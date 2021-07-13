@@ -9,7 +9,6 @@ export default function Home() {
     <div>
       <HeroSection />
       <AboutSection />
-
       <ProjectsSection />
       <ContactBanner />
     </div>

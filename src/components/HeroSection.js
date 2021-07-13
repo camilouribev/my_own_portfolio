@@ -5,7 +5,6 @@ import HeroImg from '../assets/images/hero-small.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
-import PText from './PText';
 
 import { faLinkedin } from '../../node_modules/@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '../../node_modules/@fortawesome/free-solid-svg-icons';
@@ -107,7 +106,8 @@ const HeroStyles = styled.div`
   }
   @media only screen and (max-width: 768px) {
     .hero {
-      min-height: 750px;
+      min-height: 700px;
+      margin-top: -3rem;
     }
     .hero__heading {
       font-size: 1.4rem;
@@ -124,7 +124,7 @@ const HeroStyles = styled.div`
     }
     .hero__social {
       left: 0px;
-      bottom: -5%;
+      bottom: 15%;
       width: 20px;
       .hero__social__indicator {
         width: 20px;
@@ -171,7 +171,6 @@ export default function HeroSection() {
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
-            <PText>Placeholder text</PText>
             <Button btnText="see my projects" btnLink="/projects" />
           </div>
           <div className="hero__social">
@@ -196,7 +195,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/camilo-uribe-1285581b1/"
+                    href="https://www.linkedin.com/in/camilo-uribe-vargas"
                     target="_blank"
                     rel="noreferrer"
                   >
