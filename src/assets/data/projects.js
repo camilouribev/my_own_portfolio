@@ -15,7 +15,7 @@ const projects = [
     id: uuidv4(),
     name: 'Rise Up Ecommerce',
     desc:
-      'Pole dance academy website, with a complete ecommerce of aerial acrobatics equipment. Made with Django, React and Redux.',
+      'Pole dance academy website, with a complete ecommerce of aerial acrobatics equipment. Made with Django, Postgresql, React and Redux.',
     img: Pole,
     link: 'https://riseuppoledance.herokuapp.com/',
   },
